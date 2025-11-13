@@ -1,0 +1,27 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+	int n,t=0,s=1,b=0,d;
+	cin>>n;
+	int a[n+1];
+	for(int i=0;i<n;i++)
+	{
+		cin>>a[i];
+	}
+	
+	for(int i=0;i<n;i++)
+	{
+	    for(int j=i+1;j<n;j++)
+		{
+			if(a[i]==a[j])
+			{
+				cout<<i<<" "<<j;
+				return 0;
+			}
+	    }    
+	}
+	
+}	
+
