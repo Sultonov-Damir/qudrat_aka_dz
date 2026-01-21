@@ -1,0 +1,34 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+	int n,k=0,m,h,x=0,y=0,b;
+	double s=0,t=0; 
+	cin>>m>>n;
+	int a[m+1][n+1];
+	for(int i=0;i<m;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			cin>>a[i][j];
+		}
+	}
+	for(int i=0;i<m;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			if(a[i][j]>0) x++;
+			if(a[i][j]<0) y++;
+		}
+		if(x==y)
+		{
+			cout<<i;
+			return 0;
+		}
+		x=0; 
+		y=0;
+	}
+	cout<<"Bunday satr yo'q";
+}
