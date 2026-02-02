@@ -15,9 +15,9 @@ int main()
 			cin>>a[i][j];
 		}
 	}
-	for(int i=0;i<n;i++)
+	for(int i=0;i<m;i++)
 	{
-		swap(a[k1][i],a[k2][i]);
+		swap(a[i][k1],a[i][k2]);
 	}
 	for(int i=0;i<m;i++)
 	{
